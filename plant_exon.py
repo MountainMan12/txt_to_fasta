@@ -14,7 +14,7 @@ for i in range(0, len(df.index)):
     #All header elements are seprated by ',' 
     fh.write('>'+''.join(str(x)+'='+str(y)+',' for x,y in zip(cols,header))+'\n')
     #Write FASTA sequence
-    fh.write(str(df.iloc[df.index[i], 0])+'\n')
+    fh.write(str(df.iloc[df.index[i], 0])+'\n'+'\n')
 
 fh.close()
 
