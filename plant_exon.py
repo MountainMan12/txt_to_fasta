@@ -3,7 +3,7 @@
 #Contact: pawan12394@gmail.com
 import pandas as pd
 
-df = pd.read_csv('exons_plants.csv', header = 0)
+df = pd.read_csv('1601456737847_Plants_Release42_triticum_dicoccoides.txt', header = 0, sep=',')
 fh = open('exons_seq.fasta','w') #Write to a .fasta file
 
 cols = list(df.columns)
